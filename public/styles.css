@@ -16,4 +16,5 @@ h1 {
     .container {
         justify-content: center;
         display: flex;
+    }
 }
