@@ -23,7 +23,7 @@ const restaurantdata = [];
 function myMatches(word, restaurantdata){
     return restaurantdata.filter(item=> {
       const regex = new RegExp(word, 'gi');
-      return item.name.match(regex)|| place.category.match(regex);
+      return item.name.match(regex)|| item.category.match(regex);
     });
 }
 //when value is changed
