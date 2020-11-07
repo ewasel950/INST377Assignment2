@@ -25,6 +25,7 @@ body {
 h1 {
    color: rgb(246, 253, 255); 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 }
 @media only screen and (min-width:1600px){
@@ -34,4 +35,9 @@ h1 {
     }
 =======
 >>>>>>> main
+=======
+}
+.textinput[type="text"] {
+    height: 75px;
+>>>>>>> upstream/main
 }

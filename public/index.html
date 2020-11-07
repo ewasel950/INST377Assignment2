@@ -4,18 +4,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Ravendra Nand, Michael Ajibade, and Eman Wasel Assignment 2</title>
-    
 </head>
+
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Assignment 2</h1>
-            <div class="row"></div>   
+    <div class = "wrapper">
+        <div class="container">
+            <div class="header">
+                <h1>Assignment 2</h1>
+                <div class="row"></div>   
+            </div>
+            <form class = 'search'>
+                <input type="text" class="textinput" placeholder="I am a placeholder"></input>
+                 <ul class="suggestions">
+                     <li>
+                         filter for a city
+                     </li>
+                     <li>
+                         or a zip
+                     </li>
+                 </ul>    
+            </form>
         </div>
-        <input type="text" class="textinput" placeholder="I am a placeholder"></input>
-    </div>
-    <input type="text" class="textinput" placeholder="catogery  name"></input>
-    <script src="script.js"></script>    
-    <script> const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json'</script>           
+
+        <div id="navContainer">
+        </div>
+    </div>  
+    <script src="script.js"></script>          
 </body>
 </html>
