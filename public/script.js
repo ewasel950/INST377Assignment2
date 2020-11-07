@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 function range(int) {
     const arr = [];
     for (let i = 0; i < int; i += 1) {
@@ -45,8 +45,7 @@ function displayMatches(){
          `;
     }).join('');
 }
-  
-=======
+
 const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
 const cities = [];
 
@@ -79,4 +78,4 @@ const searchInput = document.querySelector('.textinput');
 const suggestions = document.querySelector('.suggestions')
 
 searchInput.addEventListener('keyup', displayMatches);
->>>>>>> upstream/main
+
