@@ -8,8 +8,23 @@ body {
     flex-direction: column;
 }
 
+.container{
+    min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
    color: rgb(246, 253, 255); 
+<<<<<<< HEAD
 
 }
 @media only screen and (min-width:1600px){
@@ -17,4 +32,6 @@ h1 {
         justify-content: center;
         display: flex;
     }
+=======
+>>>>>>> main
 }
