@@ -38,23 +38,27 @@ function findMatches(wordToMatch, cities){
 }
 function displayMatches(){
     const matchArray = findMatches(this.value, cities);
-    const html = matchArray.map(place => {
-        
-        return `
+    const html = matchArray.map(place => `
+    <div class ="card card-body mb-1">
+     <h4>${place.name} 
+         ${place.city}
+          <span
+         class ="text-primary"> ${place.zip}</span></h4></div>
+          `
+     ) 
+     /* return `
             <ul>
               <li class = "name"> ${place.name}</li>
               <li class = "name"> ${place.city}</li>
               <li class = "name"> ${place.zip}</li>
             </ul>
-        `;
-    }).join('');
+        `;*/
+    .join('');
     suggestions.innerHTML = html;
-  } 
-
-
+  
 
 const searchInput = document.querySelector('.textinput');
 const suggestions = document.querySelector('.suggestions')
 
 searchInput.addEventListener('keyup', displayMatches);
-
+}
