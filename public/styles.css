@@ -9,17 +9,19 @@ body {
 }
 
 .container{
-    min-height: 100%;
-    margin-left: auto;
-    margin-right: auto;  
+    min-height: 100%;  
 }
 
 .header{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 4px 8px;
+    border-radius: 4px;
 }
 
 h1 {
@@ -27,25 +29,33 @@ h1 {
 
 
 }
-@media only screen and (min-width:1600px){
-    .container {
-        justify-content: center;
-        display: flex;
+@media(max-width:400px){
+    .search {
+    width: 90%;
     }
 }
 .textinput[type="text"] {
     height: 75px;
 
 }
-.search >  .suggestions li {
-    background-color: rgb(250, 198, 29);
-    background: linear-gradient(180deg, rgba(250, 198, 29,1) 30%, rgb(250, 215, 102) 78%, rgb(250, 217, 145) 100%);
-    padding: 30;
-    margin: 15 auto;
-    width: auto;
-}
 .search{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.search * {
+    width: 100%;
+    align-items: flex-end;
+    padding: 0;
+  }
+.search >  .suggestions li {
+    background-color: rgb(250, 198, 29);
+    background: linear-gradient(180deg, rgba(250, 198, 29,1) 30%, rgb(250, 215, 102) 78%, rgb(250, 217, 145) 100%);
+    list-style: none;
+    padding: 30;
+    margin: 15 auto;
+    width: auto;
 }
