@@ -24,9 +24,18 @@ body {
 
 h1 {
    color: rgb(246, 253, 255); 
+
+
+}
+@media only screen and (min-width:1600px){
+    .container {
+        justify-content: center;
+        display: flex;
+    }
 }
 .textinput[type="text"] {
     height: 75px;
+
 }
 li{
     background-color: rgb(250, 198, 29);
