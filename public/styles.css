@@ -37,11 +37,15 @@ h1 {
     height: 75px;
 
 }
-li{
+.search >  .suggestions li {
     background-color: rgb(250, 198, 29);
     background: linear-gradient(180deg, rgba(250, 198, 29,1) 30%, rgb(250, 215, 102) 78%, rgb(250, 217, 145) 100%);
     padding: 30;
-    margin: 15;
-    justify-content: center;
+    margin: 15 auto;
+    width: auto;
+}
+.search{
+    display: flex;
+    flex-flow: column nowrap;
     align-items: center;
 }
