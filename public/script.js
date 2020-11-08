@@ -15,7 +15,7 @@ function findMatches(wordToMatch, cities){
 
     return cities.filter(place => {
         const regex = new RegExp(wordToMatch, 'gi');
-       return place.city.match(regex) || place.zip.match(regex)|| place.name.match(regex);
+       return place.city.match(regex) || place.category.match(regex) || place.zip.match(regex)|| place.name.match(regex);
     });
 }
 function displayMatches(){
@@ -25,6 +25,8 @@ function displayMatches(){
         return `
             <li>
               <span class = 'name'> ${place.name}</span><br>
+              <span class = 'category'> ${place.category}</span><br>
+              <span class = 'address'> ${place.address_line_1}</span><br>
               <span class = 'city'> ${place.city}</span><br>
               <span class = 'zip'> ${place.zip} </span>
             </li>
