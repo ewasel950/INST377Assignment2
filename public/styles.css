@@ -27,18 +27,19 @@ body {
 
 h1 {
    color: rgb(246, 253, 255); 
-
-
 }
+
 @media(max-width:400px){
     .search {
     width: 90%;
     }
 }
+
 .textinput[type="text"] {
     height: 40px;
 
 }
+
 .search{
     display: flex;
     flex-flow: column nowrap;
@@ -52,11 +53,32 @@ h1 {
     align-items: flex-end;
     padding: 0;
   }
+
 .search >  .suggestions li {
     background-color: rgb(250, 198, 29);
     background: linear-gradient(180deg, rgba(250, 198, 29,1) 30%, rgb(250, 215, 102) 78%, rgb(250, 217, 145) 100%);
     list-style: none;
     padding: 30;
-    margin: 15 auto;
+    margin: 15 ;
     width: auto;
+}
+
+li .name {
+    font-style: initial;
+    font-weight: 900;
+    font-size: larger;
+    line-height:200%
+    
+  }
+
+li .category{
+    font-style: italic;
+    font-weight: 500;
+    line-height:200%
+}
+
+li .address {
+    font-style: normal;
+    font-size: medium;
+    font-weight: lighter;
 }
