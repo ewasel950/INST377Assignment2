@@ -27,8 +27,8 @@ function displayMatches(){
               <span class = 'name'> ${place.name}</span><br>
               <span class = 'category'> ${place.category}</span><br>
               <span class = 'address'> ${place.address_line_1}</span><br>
-              <span class = 'city'> ${place.city}</span><br>
-              <span class = 'zip'> ${place.zip} </span>
+              <span class = 'address'> ${place.city}</span><br>
+              <span class = 'address'> ${place.zip} </span>
             </li>
         `;
     }).join('');
