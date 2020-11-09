@@ -1,5 +1,6 @@
 /* css */
 body {
+    font-family: 'Lato', sans-serif;
     background: rgb(66, 204, 247);
 }
 
@@ -35,7 +36,7 @@ h1 {
     }
 }
 .textinput[type="text"] {
-    height: 75px;
+    height: 40px;
 
 }
 .search{
